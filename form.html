@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Travel form for our trip.</h1>
+        <form action="form.php">
+            <input type="text" placeholder="Enter Your Name"><br>
+            <!-- RADIO BUTTONS CAN BE DECLARED IN 2 WAYS. -->
+
+            <!-- 1. EVRYTHING INSIDE THE LABEL TAG -->
+            <label for="sectionida">
+                <input type="radio" value="Section a" name="section" id="sectionida">Section A
+            </label><br>
+            <label for="sectionidb">
+                <input type="radio" value="Section b" name="section" id="sectionidb">Section B
+            </label><br>
+            <label for="sectionidc">
+                <input type="radio" value="Section c" name="section" id="sectionidc">Section C
+            </label><br>
+            <label for="sectionidd">
+                <input type="radio" value="Section d" name="section" id="sectionidd">Section D
+            </label><br>
+
+            <!-- 2. DECLARING LABEL TAG AFTER THE INPUT TAG -->
+            <input type="radio" id="sectionida" name="section" value="Section a">
+            <label for="sectionida">Section A</label><br>
+            <input type="radio" id="sectionidb" name="section" value="Section a">
+            <label for="sectionidb">Section B</label><br>
+            <input type="radio" id="sectionidc" name="section" value="Section a">
+            <label for="sectionidc">Section C</label><br>
+            <input type="radio" id="sectionidd" name="section" value="Section a">
+            <label for="sectionidd">Section D</label><br>
+
+            <!-- CHECKBOX -->
+            <input type="checkbox" id="foodcanteen" class="red" name="canteen">
+            <label for="foodcanteen">Want Food Canteen Card</label><br>
+            <input type="checkbox" id="foodcanteen" class="red" name="canteen">
+            <label for="foodcanteen">Want Food Canteen Card 1 </label><br>
+            <input type="checkbox" id="foodcanteen" class="red" name="canteen">
+            <label for="foodcanteen">Want Food Canteen Card 2</label><br>
+            <input type="checkbox" id="foodcanteen" class="red" name="canteen">
+            <label for="foodcanteen">Want Food Canteen Card 3</label><br>
+            <input type="checkbox" id="foodcanteen" class="red" name="canteen">
+            <label for="foodcanteend">Want Food Canteen Card 4</label><br>
+
+            <!-- TEXTAREA -->
+            <!-- Text area type1 -->
+            <textarea name="explain" id="explain" cols="30" rows="10"
+                placeholder="Explain why do you want to join.">IF WROTE HERE WILL BE WRITTEN IN DEFAULT ELSE placeholder IF DECLARED !</textarea>
+            <!-- Text area type2 --><BR>
+            <label for="w3review">Review of W3Schools:</label></p>
+            <textarea id="w3review" name="w3review" rows="4"
+                cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+            <br>
+            <input type="submit" value="Submit">
+         
+         
+            <!-- SELECT ELEMENT -->
+            <select name="car" id="car">Select your car
+                <option value="omni">SELECT YOUR CAR.</option>
+                <option value="omni">Omni 1</option>
+                <option value="omni">Omni 2</option>
+                <option value="omni">Omni 3</option>
+                <option value="omni">Omni 4</option>
+                <option value="omni">Omni 5</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
